@@ -1,0 +1,30 @@
+{{#unless failed}}
+<div class="news-list">
+	{{#each postData}}
+	<a href={{this.url}} class="news-card">
+		<div class="top">
+			<h4 class='pre-title'>Наука и техника</h4>
+			<span class='date'>{{this.ptime}}</span>
+		</div>
+		<h2 class='title'>{{this.title}}</h2>
+		<p>{{this.description}}</p>
+	</a>
+	{{/each}}
+</div>
+{{/unless}}
+
+{{#if failed}}
+<h2>не дождались новостей</h2>
+{{/if}}
+
+{{#if nonImp}}
+<ul>
+	{{#each nonImp}}
+	<li>{{this}}</li>
+	{{/each}}
+</ul>
+{{/if}}
+
+{{#if nonImpFailed}}
+<h2>не дождались фраз</h2>
+{{/if}}

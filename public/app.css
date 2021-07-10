@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.news-card {
+	margin-top: 50px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+.news-card:hover {
+	text-decoration: underline;
+}
+
+.news-card .top {
+	display: flex;
+	align-items: center;
+}
+
+.news-card .pre-title {
+	margin-right: 10px;
+	color: blue;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.news-card .date {
+	color: grey;
+	font-size: 14px;
+}
